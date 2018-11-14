@@ -1,0 +1,31 @@
+<?php
+ include '../connection.php'; 
+session_start();
+if(!$_SESSION['email']){
+	
+	header("location: index.php");
+	
+}
+?>
+
+
+
+
+<html>
+    <head>
+	   <title>delete</title>
+	 </head>
+        <body>	 
+	       
+
+       <h1>delete successfully</h1>
+	   <a href="page1.php">First page</a><br>
+       <a href="notice.php">Notice panel</a><br>
+	   <a href="participents.php">participents panel</a><br>
+	   <a href="feedback.php">feedback panel</a><br>
+       <a href="query.php">query panel</a><br>
+	   
+	   
+	   
+	   </body>
+</html>	   
